@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: rgba(57, 131, 98, 0.701);
+        }
+        .box{
+            background: #87c6d2ec;
+            margin: 100px auto 0px;
+            width: 90%;
+            max-width: 600px;
+            height: 350px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px grey;
+            outline: none;
+            border: none;
+        }
+        H1{
+            margin-left:150px ;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(50, 46, 46);
+            color: white;
+        }
+       
+        #question{
+            margin-left: 10px;
+            color: rgb(109, 38, 38);
+        }
+        .answer-btn{
+            display: block;
+        }
+        .btn{
+            width: 300px;
+            height: 40px;
+            margin-left: 10px;
+            border: none;
+            margin: 5px;
+            cursor: pointer;
+            background: white;
+            border-radius: 5px;
+        }
+        #submit{
+            border: none;
+            border-radius: 8px;
+            padding: 10px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        .btn:hover:not([disabled]){
+               background: #5f5c5c;
+               color: white;
+        }
+        .btn:disabled{
+            cursor: no-drop;
+        }
+        .correct{
+            background: rgba(108, 225, 108, 0.792);
+        }
+        .incorrect{
+            background: rgba(232, 6, 6, 0.63);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <H1>Simple Quiz!</H1>
+        <div class="quiz">
+            <h3 id="question">Question goes here!</h3>
+            <div id="answer-btn">
+            <!-- <button class="btn">Answer1</button>
+            <button class="btn">Answer2</button>
+            <button class="btn">Answer3</button>
+            <button class="btn">Answer4</button> -->
+        </div>
+        </div>
+        <button id="submit" type="submit">Start</button>
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>
